@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		54A86F7828777B82003BCB21 /* BookShelfSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A86F7728777B82003BCB21 /* BookShelfSwiftUIApp.swift */; };
-		54A86F7A28777B82003BCB21 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A86F7928777B82003BCB21 /* ContentView.swift */; };
 		54A86F7C28777B84003BCB21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A86F7B28777B84003BCB21 /* Assets.xcassets */; };
 		54A86F7F28777B84003BCB21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54A86F7E28777B84003BCB21 /* Preview Assets.xcassets */; };
+		54A86F8728777DC3003BCB21 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A86F8628777DC3003BCB21 /* Book.swift */; };
+		54A86F8A28777F22003BCB21 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A86F8928777F22003BCB21 /* BookViewModel.swift */; };
+		54A86F8F2877829E003BCB21 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A86F8E2877829E003BCB21 /* BookListView.swift */; };
+		54A86F9128778E69003BCB21 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A86F9028778E69003BCB21 /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54A86F7428777B82003BCB21 /* BookShelfSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookShelfSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54A86F7728777B82003BCB21 /* BookShelfSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelfSwiftUIApp.swift; sourceTree = "<group>"; };
-		54A86F7928777B82003BCB21 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		54A86F7B28777B84003BCB21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54A86F7E28777B84003BCB21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54A86F8628777DC3003BCB21 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		54A86F8928777F22003BCB21 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
+		54A86F8D287781DB003BCB21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54A86F8E2877829E003BCB21 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
+		54A86F9028778E69003BCB21 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				54A86F7728777B82003BCB21 /* BookShelfSwiftUIApp.swift */,
-				54A86F7928777B82003BCB21 /* ContentView.swift */,
-				54A86F7B28777B84003BCB21 /* Assets.xcassets */,
-				54A86F7D28777B84003BCB21 /* Preview Content */,
+				54A86F8C28778187003BCB21 /* Resources */,
+				54A86F8B2877817A003BCB21 /* Views */,
+				54A86F8828777EF6003BCB21 /* ViewModels */,
+				54A86F8528777DAE003BCB21 /* Models */,
 			);
 			path = BookShelfSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +73,41 @@
 				54A86F7E28777B84003BCB21 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54A86F8528777DAE003BCB21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				54A86F8628777DC3003BCB21 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		54A86F8828777EF6003BCB21 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				54A86F8928777F22003BCB21 /* BookViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		54A86F8B2877817A003BCB21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				54A86F8E2877829E003BCB21 /* BookListView.swift */,
+				54A86F9028778E69003BCB21 /* BookDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		54A86F8C28778187003BCB21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				54A86F8D287781DB003BCB21 /* Info.plist */,
+				54A86F7B28777B84003BCB21 /* Assets.xcassets */,
+				54A86F7D28777B84003BCB21 /* Preview Content */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54A86F7A28777B82003BCB21 /* ContentView.swift in Sources */,
+				54A86F8A28777F22003BCB21 /* BookViewModel.swift in Sources */,
 				54A86F7828777B82003BCB21 /* BookShelfSwiftUIApp.swift in Sources */,
+				54A86F9128778E69003BCB21 /* BookDetailView.swift in Sources */,
+				54A86F8728777DC3003BCB21 /* Book.swift in Sources */,
+				54A86F8F2877829E003BCB21 /* BookListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,10 +312,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BookShelfSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BookShelfSwiftUI/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = QAY6XTDMYU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookShelfSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,10 +342,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"BookShelfSwiftUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"BookShelfSwiftUI/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = QAY6XTDMYU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BookShelfSwiftUI/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
